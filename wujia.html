@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/wujia.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+<body>
+    <header class="hero">
+        <nav id="container">
+            <img src="./images/Wujia2.png" class="logo">
+            <ul id="main-menu">
+                <li><a href="#">Trang chủ</a></li>
+                <li><a href="#">Thông tin</a>
+                    <ul class="sub-menu">
+                        <li><a href="">Giới thiệu</a></li>
+                        <li><a href="">Thực đơn</a>
+                            <ul class="sub-menu">
+                                <li><a href="">Menu 2.2.1</a></li>
+                                <li><a href="">Menu 2.2.2</a></li>
+                                <li><a href="">Menu 2.2.3</a></li>
+                                <li><a href="">Menu 2.2.4</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">Hệ thống cửa hàng</a></li>
+                        <li><a href="">Nhượng quyền</a></li>
+                        <li><a href="">Tin tức</a></li>
+                    </ul>
+                </li>
+                <li><a href="./php/welcome.php">Quản lý</a>
+                <li><a href="#">Giỏ hàng</a></li>
+            </ul>
+            <!--<div class="search-icon">
+                <input type="search" placeholder="Search">
+                <label class="icon">
+                    <span class="fa-solid fa-magnifying-glass"></span>
+                </label>
+            </div>-->
+            <ul class="navbar-right">
+                <li>
+                    <i class="fa-solid fa-user"></i>
+                    <a href="./php/signup.php">Signup</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-right-to-bracket"></i>
+                    <a href="./php/login.php">Login</a>
+                </li>
+            </ul>
+            <img src="./images/profile.png" class="user-pic" onclick="toggleMenu()">
+            <div class="sub-menu-wrap" id="subMenu">
+                <div class="sub-user">  
+                    <div class="user-info">
+                        <img src="images/profile.png">
+                        <h3>James</h3>
+                    </div>
+                    <hr>
+                    <a href="#" class="sub-menu-link">
+                        <i class="fa-solid fa-user" style="padding-left: 11px;"></i>
+                        <p>My Profile</p>
+                        <span></span>
+                    </a>
+                    <a href="#" class="sub-menu-link">
+                        <i class="fa-solid fa-envelope"></i>
+                        <p>Inbox</p>
+                        <span></span>
+                    </a>
+                    <a href="#" class="sub-menu-link">
+                        <i class="fa-solid fa-gear"></i>
+                        <p>Setting & Privacy</p>
+                        <span></span>
+                    </a>
+                    <a href="#" class="sub-menu-link">
+                        <i class="fa-solid fa-circle-question"></i>
+                        <p>Help & Support</p>
+                        <span></span>
+                    </a>
+                    <a href="#" class="sub-menu-link">
+                        <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                        <p>Logout</p>
+                        <span></span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="slider">
+        <swiper-container class="mySwiper" pagination="true"pagination-clickable="true" navigation="true" space-between="30" loop="true">
+        <swiper-slide>Slide 1</swiper-slide>
+        <swiper-slide>Slide 2</swiper-slide>
+        <swiper-slide>Slide 3</swiper-slide>
+        <swiper-slide>Slide 4</swiper-slide>
+        <swiper-slide>Slide 5</swiper-slide>
+        <swiper-slide>Slide 6</swiper-slide>
+        <swiper-slide>Slide 7</swiper-slide>
+        <swiper-slide>Slide 8</swiper-slide>
+        <swiper-slide>Slide 9</swiper-slide>
+        </swiper-container>
+    </div>
+    <div class="app_container">
+        <div class="grid">
+            <div class="grid__row app-content">
+                <div class="grid__column-2">
+                    <nav class="category">
+                        <h3 class="category__heading">
+                          <i class="category__heading-icon fa-solid fa-list"></i>
+                          Danh mục
+                        </h3>    
+                        <ul class="category-list">
+                          <li class="category-item category-item--active">
+                            <a href="#" class="category-item__link">Trà Đài Loan</a>
+                          </li>
+                          <li class="category-item">
+                            <a href="#" class="category-item__link">Trà Sữa</a>
+                          </li>
+                          <li class="category-item">
+                            <a href="#" class="category-item__link">Trà Latte</a>
+                          </li>
+                          <li class="category-item">
+                            <a href="#" class="category-item__link">Chanh</a>
+                          </li>
+                          <li class="category-item">
+                            <a href="#" class="category-item__link">Yakult</a>
+                          </li>
+                          <li class="category-item">
+                            <a href="#" class="category-item__link">Thức Uống "Hot"</a>
+                          </li>
+                          <li class="category-item">
+                            <a href="#" class="category-item__link">Topping bán lẻ</a>
+                          </li>
+                        </ul>
+                      </nav>
+                </div>
+                <div class="grid__column-10">
+                    <div class="home-filter">
+                        <span class="home-filter__label">Sắp xếp theo</span>
+                        <button class="home-filter__btn btn">Phổ biến</button>
+                        <button class="home-filter__btn btn btn--primary">Mới nhất</button>
+                        <button class="home-filter__btn btn">Bán chạy</button>
+                        <div class="select-input">
+                            <span class="select-input__label">Giá</span>
+                            <i class="select-input__icon fa-solid fa-angle-down"></i>
+                            <ul class="select-input__list">
+                                <li class="select-input__item">
+                                    <a href="" class="select-input__link">Giá: thấp đến cao</a>
+                                </li>
+                                <li class="select-input__item">
+                                    <a href="" class="select-input__link">Giá: cao đến thấp</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="home-filter__page">
+                            <span class="home-filter__page-num">
+                                <span class="home-filter__page-current">1</span>
+                                /14
+                            </span>
+                            <div class="home-filter__page-control">
+                                <a href="" class="home-filter__page-btn home-filter__page-btn--disabled">
+                                    <i class="home-filter__page-icon fa-solid fa-angle-left"></i>
+                                </a>
+                                <a href="" class="home-filter__page-btn">
+                                    <i class="home-filter__page-icon fa-solid fa-angle-right"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="home-product">
+                        <div class="grid__row">
+                            <!--Product item-->
+                            <div class="grid__column-2-4">
+                                <a class="home-product-item" href="#">
+                                    <div class="home-product-item__img" style="background-image: url(data:image/jpeg;base64,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);"></div>
+                                    <h4 class="home-product-item__name">Hồng trà Đài Loan</h4>
+                                    <div class="home-product-item__price">
+                                        <span class="home-product-item__price-old">22.00đ</span>
+                                        <span class="home-product-item__price-current">20.000đ</span>
+                                    </div>
+                                    <div class="home-product-item__action">
+                                        <span class="home-product-item__like home-product-item_like--liked">
+                                            <i class="home-product-item__like-icon-empty fa-regular fa-heart"></i>
+                                            <i class="home-product-item__like-icon-fill fa-solid fa-heart"></i>
+                                        </span>
+                                        <div class="home-product-item__rating">
+                                            <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                            <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                            <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                            <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                            <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                        </div>
+                                        <span class="home-product-item__sold">100 đã bán</span>
+                                    </div>
+                                    <div class="home-product-item__origin">
+                                        <span class="home-product-item__brand">Trà thường</span>
+                                        <span class="home-product-item__origin-name">Đài Loan</span>
+                                    </div>
+                                    <div class="home-product-item__favourite">
+                                        <i class="fa-solid fa-check"></i>
+                                        <span>Yêu thích</span>
+                                    </div>
+                                    <div class="home-product-item__sale-off">
+                                        <span class="home-product-item__sale-off-percent">10%</span>
+                                        <span class="home-product-item__sale-off-label">GIẢM</span>
+                                    </div>
+                                </a>
+                            </div>   
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="box_cauchuyen">
+        <section>
+            <div class="box_cauchuyen_content">
+                <a class="box_cauchuyen_a" href="https://wujiateavn.com/gioi-thieu" title="Câu chuyện HỒNG TRÀ NGÔ GIA ">
+                    <figure class="box_cauchuyen_img">
+                        <img src="https://wujiateavn.com/files/category/cau-chuyen-hong-tra-ngo-gia-gmz2cluw.jpg" alt="Câu chuyện HỒNG TRÀ NGÔ GIA ">
+                    </figure>
+                    <h4 class="box_cauchuyen_text">
+                        <b>Câu chuyện HỒNG TRÀ NGÔ GIA </b>
+                    </h4>
+                </a>
+            </div>
+        </section>
+    </div>
+    <div class="box_danhmuc">
+        <section>
+            <div class="box_danhmuc_content">
+                <div class="box_cauchuyen_content">
+                    <a class="box_cauchuyen_a" href="https://wujiateavn.com/gioi-thieu" title="Câu chuyện HỒNG TRÀ NGÔ GIA ">
+                        <figure class="box_cauchuyen_img">
+                            <img src="https://wujiateavn.com/files/category/lich-su-hinh-thanh-m9mqy4st.png" alt="Câu chuyện HỒNG TRÀ NGÔ GIA ">
+                        </figure>
+                        <h4 class="box_cauchuyen_text">
+                            <b>Lịch sử hình thành</b>
+                        </h4>
+                    </a>
+                </div>
+                <div class="box_cauchuyen_content">
+                    <a class="box_cauchuyen_a" href="https://wujiateavn.com/gioi-thieu" title="Câu chuyện HỒNG TRÀ NGÔ GIA ">
+                        <figure class="box_cauchuyen_img">
+                            <img src="https://wujiateavn.com/files/category/thuc-don-rxmbepce.jpg" alt="Câu chuyện HỒNG TRÀ NGÔ GIA ">
+                        </figure>
+                        <h4 class="box_cauchuyen_text">
+                            <b>Thực đơn</b>
+                        </h4>
+                    </a>
+                </div>
+            </div>
+            <!--<div class="box_danhmuc_content">
+                <div class="box_danhmuc_item danhmuc_1">
+                    <a class="box_danhmuc_a" href="https://wujiateavn.com/gioi-thieu?v=lich-su" title="Lịch sử hình thành ">
+                        <figure class="box_danhmuc_img">
+                            <img src="https://wujiateavn.com/files/category/lich-su-hinh-thanh-m9mqy4st.png" alt="Lịch sử hình thành ">
+                        </figure>
+                        <h4 class="box_danhmuc_text">
+                            <b>Lịch sử hình thành</b>
+                        </h4>
+                    </a>
+                </div>
+                <div class="box_danhmuc_item danhmuc_2">
+                    <a class="box_danhmuc_a" href="https://wujiateavn.com/menu" title=" Thực đơn ">
+                        <figure class="box_danhmuc_img">
+                            <img src="https://wujiateavn.com/files/category/thuc-don-rxmbepce.jpg" alt=" Thực đơn ">
+                        </figure>
+                        <h4 class="box_danhmuc_text">
+                            <b>Thực đơn</b>
+                        </h4>
+                    </a>
+                </div>
+            </div>
+            <div class="box_danhmuc_item danhmuc_3">
+                <a class="box_danhmuc_a" href="https://wujiateavn.com/nhuong-quyen" title="TƯ VẤN NHƯỢNG QUYỀN">
+                    <figure class="box_danhmuc_img">
+                        <img src="https://wujiateavn.com/files/category/tu-van-nhuong-quyen-h9mbfwzt.jpg" alt="TƯ VẤN NHƯỢNG QUYỀN">
+                    </figure>
+                </a>
+            </div>-->
+        </section>
+    </div>
+    <footer>
+        <div class="footer_top">
+            <div class="footer_logo">
+                <figure>
+                    <img src="https://wujiateavn.com/files/systems/logo-l6m1s0u2.png" alt="Hồng Trà Ngô Gia">
+                </figure>
+                <aside>
+                    <code class="s_face"><a title="facebook" href="https://www.facebook.com/Hồng-Trà-Ngô-Gia-吳家紅茶冰-116331789807557"><img src="https://wujiateavn.com/images/icon_facebook.png" alt="img"></a></code>
+                    <code class="s_face"><a title="google" href="#"><img src="https://wujiateavn.com/images/icon_google.png" alt="img"></a></code>
+                    <code class="s_face"><a title="twitter" href="#"><img src="https://wujiateavn.com/images/icon_twitter.png" alt="img"></a></code>
+                    <code class="s_face"><a title="youtube" href="#"><img src="https://wujiateavn.com/images/icon_youtube.png" alt="img"></a></code>
+                    <code class="s_face"><a title="instagram" href="#"><img src="https://wujiateavn.com/images/icon_instagram.png" alt="img"></a></code>
+                </aside>
+            </div>
+            <div class="footer_address"><label>Thông tin liên hệ</label>
+                <ul>
+                    <li>
+                        <code>Địa chỉ: </code>
+                        <span>330A/13 An Phú Tây - Hưng Long - Ấp1 - Xã An Phú Tây - Huyện Bình Chánh - TP. Hồ Chí Minh</span>
+                    </li><li><code>Nhượng quyền: </code><span style="color: #ffff00"> 0965-210-839 (Thứ 2 - Thứ 7 / 8:00 AM - 17:00 PM)</span> 
+                    <br>(T2-T7 / 8h - 17h)</li>
+                    <li>
+                        <code>Điện thoại: </code>
+                        <span style="color: #ffff00"> 02-822-538-043</span>
+                    </li>
+                    <li>
+                        <code>Phản ánh: </code>
+                        <span style="color: #ffff00"> 02-822-538-045</span>
+                    </li>
+                    <li><code>Email: </code>
+                        <span> marketingngogia@gmail.com</span>
+                    </li>
+                    <li>
+                        <code>Website: </code>
+                        <span> wujiateavn.com</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer_share">
+                <aside>
+                    <div class="fb-like-box fb_iframe_widget" data-href="https://www.facebook.com/Hồng-Trà-Ngô-Gia-吳家紅茶冰-116331789807557" data-width="400" data-height="450" data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false" fb-xfbml-state="rendered" fb-iframe-plugin-query="app_id=&amp;color_scheme=light&amp;container_width=0&amp;header=false&amp;height=450&amp;href=https%3A%2F%2Fwww.facebook.com%2FH%E1%BB%93ng-Tr%C3%A0-Ng%C3%B4-Gia-%E5%90%B3%E5%AE%B6%E7%B4%85%E8%8C%B6%E5%86%B0-116331789807557&amp;locale=vi_VN&amp;sdk=joey&amp;show_border=false&amp;show_faces=true&amp;stream=false&amp;width=400">
+                        <span style="vertical-align: bottom; width: 400px; height: 130px;">
+                            <iframe name="f270b3c6df79ccc" width="400px" height="450px" data-testid="fb:like_box Facebook Social Plugin" title="fb:like_box Facebook Social Plugin" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" src="https://www.facebook.com/v13.0/plugins/like_box.php?app_id=&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df27e574021148d%26domain%3Dwujiateavn.com%26is_canvas%3Dfalse%26origin%3Dhttps%253A%252F%252Fwujiateavn.com%252Fff701727119498%26relation%3Dparent.parent&amp;color_scheme=light&amp;container_width=0&amp;header=false&amp;height=450&amp;href=https%3A%2F%2Fwww.facebook.com%2FH%E1%BB%93ng-Tr%C3%A0-Ng%C3%B4-Gia-%E5%90%B3%E5%AE%B6%E7%B4%85%E8%8C%B6%E5%86%B0-116331789807557&amp;locale=vi_VN&amp;sdk=joey&amp;show_border=false&amp;show_faces=true&amp;stream=false&amp;width=400" style="border: none; visibility: visible; width: 400px; height: 130px;" class=""></iframe>
+                        </span>
+                    </div>
+                </aside>
+            </div>
+        </div>
+        <div class="footer_bottom">
+            <section>
+                <span>Copyright © 2021 Hồng Trà Ngô Gia</span>
+                <label>
+                    <a href="https://vietnhan.co" title="Thiết kế website Việt Nhân">Thiết kế websiteVietnhan.co</a>
+                </label>
+            </section>
+        </div>
+        <div class="footer-"></div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script>
+        $(document).ready(function(){
+            //Tìm tất cả li có sub-menu và thêm nó vào class has-child
+            $('.sub-menu').parent('li').addClass('has-child');
+        })
+        let subMenu = document.getElementById("subMenu");
+        function toggleMenu(){
+            subMenu.classList.toggle("open-menu");
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
+</body>
+</html>
